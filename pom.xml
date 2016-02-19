@@ -56,19 +56,9 @@
           <target>1.7</target>
         </configuration>
       </plugin>-->
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-war-plugin</artifactId>
-					<version>2.4</version>
-					<configuration>
-						<warSourceDirectory>src/main/webapp</warSourceDirectory>
-						 
-						<warName>Company</warName>
-						
-						<failOnMissingWebXml>false</failOnMissingWebXml>
-					</configuration>
-				</plugin>
-				     <plugin>
+      
+      
+        <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-dependency-plugin</artifactId>
     <version>2.3</version>
@@ -89,6 +79,21 @@
         </execution>
     </executions>
 </plugin>
+      
+      
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.4</version>
+					<configuration>
+						<warSourceDirectory>src/main/webapp</warSourceDirectory>
+						 
+						<warName>Company</warName>
+						
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+				</plugin>
+				   
 
 			</plugins>
 		</pluginManagement>
