@@ -5,7 +5,7 @@ App.factory('UserService', ['$http', '$q', function($http, $q){
     return {
          
             fetchAllUsers: function() {
-                    return $http.get('http://companytest.herokuapp.com/user/')
+                    return $http.get('http://company-pallati.rhcloud.com/user/')
                             .then(
                                     function(response){
                                         return response.data;
@@ -19,7 +19,7 @@ App.factory('UserService', ['$http', '$q', function($http, $q){
             },
              
             createUser: function(user){
-                    return $http.post('http://companytest.herokuapp.com/user/', user)
+                    return $http.post('http://company-pallati.rhcloud.com/user/', user)
                             .then(
                                     function(response){
                                         return response.data;
@@ -35,7 +35,7 @@ App.factory('UserService', ['$http', '$q', function($http, $q){
             },
              
             updateUser: function(user, id){
-                    return $http.put('http://companytest.herokuapp.com/user/'+id, user)
+                    return $http.put('http://company-pallati.rhcloud.com/user/'+id, user)
                             .then(
                                     function(response){
                                         return response.data;
@@ -49,7 +49,7 @@ App.factory('UserService', ['$http', '$q', function($http, $q){
             },
              
             deleteUser: function(id){
-                    return $http.delete('http://companytest.herokuapp.com/user/'+id)
+                    return $http.delete('http://company-pallati.rhcloud.com/user/'+id)
                             .then(
                                     function(response){
                                         return response.data;
