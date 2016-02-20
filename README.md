@@ -7,9 +7,9 @@ Company Web service using Spring MVC and Angular JS that supports the follow
 
 you can access the service here http://gla.ddns.net:8080/Company/ which shows the web view 
 
-the web service can be quired using the following curls
+the web service can be queried using the following curls
 
-he following are the cURL for this application 
+
 
 curl get all companies
 
