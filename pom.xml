@@ -132,6 +132,7 @@
                                     <fileset>
                                         <directory>target</directory>
                                         <excludes>
+                                            <exclude>*.*</exclude>
                                             <exclude>*.war</exclude>
                                             <exclude>dependency/*.jar</exclude>
                                         </excludes>
